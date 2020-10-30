@@ -1,24 +1,24 @@
 const inquirer = require('inquirer');
-// const fs = require('fs');
-// array of questions for user
-// const appRepoData = [
-    // WHEN I enter my project title THEN this is displayed as the title of the README
-    // Title: project/repo title
-    // Description: description, 
-    // Table-of-Contents: contents,
-    // Installation: installation instructions, 
-    // Usage: usage information, 
-    // License: open source/ CCommons (badge added near top of README w notice explaining which license project is covered under)
-    // Contributing: contribution guidelines, and 
-    // Tests: test instructions
-    // Questions: questions re...?
-    
+const genPage = require('./src/markdown-template.js');
+const writeFile = require('./utils/generateMarkdown.js');
+
+// gather repo info through array of questions to user
 const questions = () => {
+    console.log(`
+====================================================
+Answer these questions to generate a new ReadMe file
+====================================================
+`)
     return inquirer.prompt([
         {
             type: 'input',
             name: 'name',
             message: "Please enter your name."
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "Please provide your contact email."
         },
         {
             type: 'input',
@@ -35,31 +35,53 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'contact',
-            message: "Please provide your contact email."
+            name: 'description',
+            message: 'Enter your project description here (Required):'
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a description of your project.');
+                    return false;
+                }
+            }
         },
         {
-            type: 'input',
-            name: 'description',
-            message: 'Enter your project description here:'
+            type: 'confirm',
+            name: 'tocConfirm',
+            message: 'Would you like to include a table of contents?',
+            default: true
+        },
+        {
+            type: 'checkbox',
+            name: 'toc',
+            message: 'Which sections would you like to include within your table of contents?',
+            choices: ['Installation', 'Instructions', 'License', 'Credits', 'Contribution Guidelines', 'Tests', 'Questions'],
+            when: ({ tocConfirm }) => {
+                if (tocConfirm) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {
             type: 'checkbox',
             name: 'languages',
             message: 'With what languages did you build this project? (Check all that apply)',
-            choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node', 'Other']
+            choices: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node', 'ES6']
         },
         {
             type: 'confirm',
             name: 'licenseConfirm',
-            message: 'Is your project licensed?',
-            default: false
+            message: 'Would you like to license your project?',
+            default: true
         },
         {
             type: 'checkbox',
             name: 'license',
-            message: 'Please indicate which license will cover your project.',
-            choices: ['FSF', 'GNU', 'OSI', 'FOSS', 'CC', 'Other'],
+            message: 'Please select one of the following open source licenses:',
+            choices: ['MIT', 'GNU', 'Mozilla', 'CC', 'Unlicense', 'Boost', 'Apache'],
             when: ({ licenseConfirm }) => {
                 if (licenseConfirm) {
                     return true;
@@ -67,12 +89,19 @@ const questions = () => {
                     return false;
                 }
             }
-        }
-    ]);
+        },
+    ])
+    .then(answers => {
+        return answers;
+    });
 };
-questions().then(answers => console.log(answers));
 
-// function to write README file
+// 'questions' function output...
+questions().then(answers => {
+    console.log(answers)
+    return generateMarkdown(answers);
+})
+
 // function writeToFile(fileName, data) {
 // }
 
