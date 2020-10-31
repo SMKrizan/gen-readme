@@ -1,43 +1,58 @@
+const listLanguages = languageArray => {
+    const language = languages.map((i) => {
+        '<br>* [${' + i + '}](#${' + i + '})'
+    });
+        const laArray = language.join(' ');
+        console.log(laArray)
+        return `
+        ## Table of Contents
+            ${laArray}
+        `;
+}
+
 // function to generate markdown for README
 module.exports = templateData => {
     console.log(templateData);
   
-    const { title, description, ...data} = templateData;
+    const { title, description, languages, ...data} = templateData;
     
     return `
-    #${title}
-
-    ##Description
+    # ${title} 
+    
+    ## Description
     ${description}
 
-    ##Table of Contents:
-        **[Installation](#installation)
-        **[Usage](#usage)
-        **[License](#license)
-        **[Contributing](#contributing)
-        **[Tests](#tests)
-        **[Questions](#questions)
+    ### Languages used:
+    ${listLanguages}
 
-    ##Installation
+    ## Table of Contents:
+        ** [Installation](#installation)
+        ** [Usage](#usage)
+        ** [Contributing](#contributing)
+        ** [License](#license)
+        ** [Tests](#tests)
+        ** [Questions?](#questions?)
+
+    ## Installation:
     ${data.installation}
 
-    ##Usage
+    ## Usage:
     ${data.usage}
-
-    ##License
-    ${data.license}
-
-    ##Contributing
+    
+    ## Contributing:
     ${data.contributing}
 
-    ##Tests
+    ## License:
+    ${data.license}
+
+    ## Tests:
     ${data.tests}
 
-    ##Questions?
-    If you have questions regarding this repo or opportunities to contribute please contact me:
+    ## Questions?
+    ${data.contact}
     ${data.name}
-    [github.com/${data.github}](#https://github.com/${data.github})
     ${data.email}
+    [github.com/${data.github}](#https://github.com/${data.github})
 
     `
 };
@@ -45,9 +60,9 @@ module.exports = templateData => {
 // generate h2 step-by-step instructions for how to get the development environment running
 
 // generate h2 instructions/examples for use with screenshot
-```md
-![alt text](assets/images/screenshot.png)
-```
+// ```md
+// ![alt text](assets/images/screenshot.png)
+// ```
 
 // generate h2 'Credits' to include collaborators with links to GItHub profiles, any 3rd party assets including links to their primary web presence, and any tutorials used including links
 

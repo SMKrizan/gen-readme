@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+ 
 // function will create a new file, 'readme.md'
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
@@ -13,7 +13,7 @@ const writeFile = fileContent => {
           // if everything goes well, resolve Promise and return data to the `.then()` method.
           resolve({
               ok: true,
-              message: "File created! Your README has been created! Navigate to 'readme.md' within the dist directory for review."
+              message: "Your README has been created! Navigate to 'readme.md' within the dist directory for review."
           });
       });
   });
