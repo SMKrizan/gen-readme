@@ -1,19 +1,3 @@
-const generateToc = tocText => {
-    if(!tocText) {
-        return '';
-    } 
-    const contents = data.toc.map((i) => {
-        '<br>*[${' + i + '}](#${' + i + '})'
-    });
-    let items = contents.join(' ');
-    console.log(items)
-        return `
-        ## Table of Contents
-            ${items}
-    
-    })
-};
-
 // function to generate markdown for README
 module.exports = templateData => {
     console.log(templateData);
@@ -21,45 +5,43 @@ module.exports = templateData => {
     const { title, description, ...data} = templateData;
     
     return `
-    `#${title}
+    #${title}
+
+    ##Description
     ${description}
 
     ##Table of Contents:
-        **Installation
-        **Usage
-        **License
-        **Contributing
-        **Tests
-        **Questions
+        **[Installation](#installation)
+        **[Usage](#usage)
+        **[License](#license)
+        **[Contributing](#contributing)
+        **[Tests](#tests)
+        **[Questions](#questions)
 
     ##Installation
-    ${installation}
+    ${data.installation}
 
     ##Usage
-    ${usage}
+    ${data.usage}
 
     ##License
-    ${license}
+    ${data.license}
 
     ##Contributing
-    ${contributing}
+    ${data.contributing}
 
     ##Tests
-    ${tests}
+    ${data.tests}
 
-    ##Questions
-    ${questions}
-
-
-
+    ##Questions?
+    If you have questions regarding this repo or opportunities to contribute please contact me:
+    ${data.name}
+    [github.com/${data.github}](#https://github.com/${data.github})
+    ${data.email}
 
     `
+};
   
-  };
-  
-
-// generate h2 table of contents (optional)
-
 // generate h2 step-by-step instructions for how to get the development environment running
 
 // generate h2 instructions/examples for use with screenshot

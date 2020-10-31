@@ -22,6 +22,11 @@ Answer these questions to generate a new ReadMe file
         },
         {
             type: 'input',
+            name: 'github'
+            message: 'Please enter your GitHub username'
+        }
+        {
+            type: 'input',
             name: 'title',
             message: "What is your project title? (Required)",
             validate: nameInput => {
@@ -47,24 +52,20 @@ Answer these questions to generate a new ReadMe file
             }
         },
         {
-            type: 'confirm',
-            name: 'tocConfirm',
-            message: 'Would you like to include a table of contents?',
-            default: true
+            type: 'input',
+            name: 'installation',
+            message: "Please enter any installation instructions."
         },
         {
-            type: 'checkbox',
-            name: 'toc',
-            message: 'Which sections would you like to include within your table of contents?',
-            choices: ['Installation', 'Instructions', 'License', 'Credits', 'Contribution Guidelines', 'Tests', 'Questions'],
-            when: ({ tocConfirm }) => {
-                if (tocConfirm) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+            type: 'input',
+            name: 'usage',
+            message: "Please enter any usage information."
         },
+        {
+            type: 'input'
+            name: 'image-link'
+            message: "Please provide the link to a screenshot of your project"
+        }
         {
             type: 'checkbox',
             name: 'languages',
@@ -72,23 +73,20 @@ Answer these questions to generate a new ReadMe file
             choices: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node', 'ES6']
         },
         {
-            type: 'confirm',
-            name: 'licenseConfirm',
-            message: 'Would you like to license your project?',
-            default: true
-        },
-        {
             type: 'checkbox',
             name: 'license',
             message: 'Please select one of the following open source licenses:',
             choices: ['MIT', 'GNU', 'Mozilla', 'CC', 'Unlicense', 'Boost', 'Apache'],
-            when: ({ licenseConfirm }) => {
-                if (licenseConfirm) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: "Please enter any contributors to this project (your contribution will be included based on information already provided)."
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: "Please enter any tests you would like to include."
         },
     ])
     .then(answers => {
