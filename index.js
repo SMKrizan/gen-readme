@@ -36,7 +36,7 @@ Answer these questions to generate a new ReadMe file
         {
             type: 'input',
             name: 'description',
-            message: 'Enter your project description here (Required):'
+            message: 'Enter your project description here (Required):',
             validate: nameInput => {
                 if (nameInput) {
                     return true;

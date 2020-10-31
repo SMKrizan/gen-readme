@@ -1,3 +1,19 @@
+const generateToc = tocText => {
+    if(!tocText) {
+        return '';
+    } 
+    const contents = data.toc.map((i) => {
+        '<br>*[${' + i + '}](#${' + i + '})'
+    });
+    let items = contents.join(' ');
+    console.log(items)
+        return `
+        ## Table of Contents
+            ${items}
+    
+    })
+};
+
 // function to generate markdown for README
 module.exports = templateData => {
     console.log(templateData);
@@ -5,10 +21,34 @@ module.exports = templateData => {
     const { title, description, ...data} = templateData;
     
     return `
-    #${title}
+    `#${title}
     ${description}
 
-    ##
+    ##Table of Contents:
+        **Installation
+        **Usage
+        **License
+        **Contributing
+        **Tests
+        **Questions
+
+    ##Installation
+    ${installation}
+
+    ##Usage
+    ${usage}
+
+    ##License
+    ${license}
+
+    ##Contributing
+    ${contributing}
+
+    ##Tests
+    ${tests}
+
+    ##Questions
+    ${questions}
 
 
 

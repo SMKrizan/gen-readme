@@ -20,4 +20,4 @@ const writeFile = fileContent => {
 };
 
 // using shorthand property name to export 'writeFile' function output to index.js
-module.exports{ writeFile };
+module.exports = { writeFile };
