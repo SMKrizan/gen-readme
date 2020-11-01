@@ -1,12 +1,10 @@
-const listLanguages = selectedLanguages => {
+const listLanguages = (selectedLanguages) => {
     const langArray = selectedLanguages.map((i) => {
-        return `<br>* [${' + i + '}](#${' + i + '})`;
+        return `<br>* [${i}](#${i})`;
     });
         languagesList = langArray.join(' ');
-        console.log(languagesList)
-        return `
-            ${languagesList}
-        `;
+        console.log({ languagesList });
+        return `${languagesList}`;
 }
 
 const displayLicense = selectedLicense => {

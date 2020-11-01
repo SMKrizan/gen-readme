@@ -1,14 +1,12 @@
 
-    # test7
-    ![license badge](https://img.shields.io/badge/license-Unlicense-brightgreen)
+    # test8
+    ![license badge](https://img.shields.io/badge/license-GPL-brightgreen)
 
     ## Description
-    test7
+    test8
 
     ### Languages used:
-    
-            <br>* [ + i + ](# + i + ) <br>* [ + i + ](# + i + )
-        
+    <br>* [jQuery](#jQuery) <br>* [Node](#Node) <br>* [ES6](#ES6)
 
     ## Table of Contents:
     - [Instructions for Installation](#instructions-for-installation)
@@ -19,24 +17,24 @@
     - [Questions?](#questions?)
 
     ## <a name="instructions-for-installation">Instructions for Installation</a>:
-    test7
+    test8
 
     ## <a name="usage">Usage</a>:
-    test7
+    test8
     
     ## <a name="contribution-guidelines">Contribution Guidelines</a>:
-    test7
+    test8
 
     ## <a name="license">License</a>:
-    Licensed under [The Unlicense](https://unlicense.org/)..
+    Licensed under the [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0).
 
     ## <a name="tests">Tests</a>:
-    test7
+    test8
 
     ## <a name="questions?">Questions?</a>
-    test7
-    test7
-    test7
-    [GitHub](https://github.com/SMKrizan)
+    test8
+    test8
+    test8
+    [GitHub](https://github.com/smkrizan)
 
     
