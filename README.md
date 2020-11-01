@@ -19,32 +19,13 @@ A command-line application that prompts the user for input about their GitHub re
 ## USAGE
 The following video provides a walkthrough of the application functionality and output:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-```md
-![alt text](assets/images/screenshot.png)
-```
+<figure class="video_container">
+  <iframe src="https://drive.google.com/file/d/1hOT9PKYvzAL-POT5jI0g5kbRbdmTOvHc/preview" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 ## Credits
 
-Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, and learning instructor through the University of Wisconsin Extended Campus Coding Bootcamp.
+Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, and learning instructor through the University of Wisconsin Extended Campus Coding Bootcamp, in addition to the tutorial below:
 
-
-Walkthrough Video: 27%
-A walkthrough video that demonstrates the functionality of the README generator must be submitted and a link to the video should be included in your README file.
-
-The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
-The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
-
-
-How to Submit the Challenge
-You are required to submit the following for review:
-
-A walkthrough video demonstrating the functionality of the application.
-
-A sample README.md file for a project repository generated using your application.
-
-The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+[GitHub](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/sites/handbook/source/handbook/markdown-guide/index.html.md)
+https://about.gitlab.com/handbook/markdown-guide/
