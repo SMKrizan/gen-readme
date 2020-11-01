@@ -1,6 +1,6 @@
 
     # test
-    [https://img.shields.io/badge/license-MIT-brightgreen]()
+    ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
     
     ## Description
     test
@@ -11,32 +11,32 @@
         
 
     ## Table of Contents:
-    - [Installation Instructions](#installation-instructions)
+    - [Instructions for Installation](#instructions-for-installation)
     - [Usage](#usage)
     - [Contribution Guidelines](#contribution-guidelines)
     - [License](#license)
     - [Tests](#tests)
     - [Questions?](#questions?)
 
-    ## Installation:
+    ## <a name="instructions-for-installation">Instructions for Installation</a>:
     test
 
-    ## Usage:
+    ## <a name="usage">Usage</a>:
     test
     
-    ## Contributing:
+    ## <a name="contribution-guidelines">Contribution Guidelines</a>:
     test
 
-    ## License:
+    ## <a name="license">License</a>:
     Licensed under undefined.
 
-    ## Tests:
+    ## <a name="tests">Tests</a>:
     test
 
-    ## Questions?
+    ## <a name="questions">Questions</a>?
     test
     test
     test
-    [github.com/test](#https://github.com/test)
+    [GitHub](#https://github.com/smkrizan)
 
     
