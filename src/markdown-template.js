@@ -10,19 +10,18 @@ const listLanguages = selectedLanguages => {
 }
 
 const displayLicense = selectedLicense => {
-    // const license = selectedLicense;
     switch (selectedLicense) {
         case 'CC':
             return `the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)`;
-        case 'GPL-3.0-or-later':
+        case 'GPL':
             return `the [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0)`;
-        case 'MPL-2.0':
+        case 'MPL':
             return `the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)`;
         case 'MIT':
             return `the [MIT](https://opensource.org/licenses/MIT) license.`;
         case 'Unlicense':
             return `[The Unlicense](https://unlicense.org/).`;
-        case 'BSL-1.0':
+        case 'BSL   ':
             return `the [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt).`;
     };
 }
@@ -37,7 +36,7 @@ module.exports = templateData => {
     return `
     # ${title}
     ![license badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
-    
+
     ## Description
     ${description}
 

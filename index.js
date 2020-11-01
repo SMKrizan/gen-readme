@@ -61,7 +61,7 @@ Answer these questions to generate a new ReadMe file
             type: 'checkbox',
             name: 'license',
             message: 'Please select one of the following open source licenses:',
-            choices: ['MIT', 'GPL-3.0-or-later', 'MPL-2.0', 'CC', 'Unlicense', 'BSL-1.0'],
+            choices: ['MIT', 'GPL', 'MPL', 'CC', 'Unlicense', 'BSL'],
         },
         {
             type: 'input',
