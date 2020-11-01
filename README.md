@@ -16,12 +16,12 @@ A command-line application that prompts the user for input about their GitHub re
 4. Enter "node index.js" into the terminal.
 
 ## <a name="usage">USAGE</a>
-The following video provides a walkthrough of the application functionality and output:
-
-[![Application Screenshot](./assets/walkthrough.jpg "application walkthrough")*Follow link below for walkthrough of application*][https://drive.google.com/file/d/1hOT9PKYvzAL-POT5jI0g5kbRbdmTOvHc/preview]
 
 
-<iframe src="https://drive.google.com/file/d/1hOT9PKYvzAL-POT5jI0g5kbRbdmTOvHc/preview" width="400" height="300"></iframe>
+![Application Screenshot](./assets/walkthrough.jpg "application walkthrough")*Here is a link to access a video walkthrough of the application:*
+[Walkthrough](https://drive.google.com/file/d/1hOT9PKYvzAL-POT5jI0g5kbRbdmTOvHc/preview)
+
+
 
 ## <a name="credits">CREDITS</a>
 
