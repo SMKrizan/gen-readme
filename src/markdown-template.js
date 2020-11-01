@@ -10,8 +10,8 @@ const listLanguages = selectedLanguages => {
 }
 
 const displayLicense = selectedLicense => {
-    const license = selectedLicense;
-    switch (license) {
+    // const license = selectedLicense;
+    switch (selectedLicense) {
         case 'CC':
             return `the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)`;
         case 'GPL-3.0-or-later':
@@ -67,7 +67,7 @@ module.exports = templateData => {
     ## <a name="tests">Tests</a>:
     ${data.tests}
 
-    ## <a name="questions">Questions</a>?
+    ## <a name="questions?">Questions?</a>
     ${data.contact}
     ${data.name}
     ${data.email}
