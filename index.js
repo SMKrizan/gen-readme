@@ -61,7 +61,17 @@ Answer these questions to generate a new ReadMe file
             type: 'checkbox',
             name: 'license',
             message: 'Please select one of the following open source licenses:',
-            choices: ['MIT', 'GNU', 'Mozilla', 'CC', 'Unlicense', 'Boost', 'Apache'],
+            choices: ['MIT', 'GPL-3.0-or-later', 'MPL-2.0', 'CC', 'Unlicense', 'BSL-1.0'],
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: "Please enter guidance for those interested in making contributions to this application."
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: "This space may be used to add any tests you would like to include with your application readme along with examples for how to run them."
         },
         {
             type: 'input',
@@ -82,16 +92,6 @@ Answer these questions to generate a new ReadMe file
             type: 'input',
             name: 'github',
             message: 'GitHub username:'
-        },
-        {
-            type: 'input',
-            name: 'contributing',
-            message: "Please enter any other contributors to this project."
-        },
-        {
-            type: 'input',
-            name: 'tests',
-            message: "This space may be used to add any tests you would like to include with your application readme along with examples for how to run them."
         },
     ])
 };

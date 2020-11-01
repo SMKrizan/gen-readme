@@ -3,7 +3,7 @@
 [How to create a Professional README](./readme-guide.md)
 
 ## DESCRIPTION
-A command-line application that prompts the user for input about their GitHub repository project and generates a high-quality, professional README.md including project title and sections entitled: Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
+A command-line application that prompts the user for input about their GitHub repository project and generates a high-quality, professional README.md file. The generated readme will display the project title and sections entitled: Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
 WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
@@ -24,13 +24,12 @@ THEN I am taken to the corresponding section of the README
 
 
 ## INSTALLATION INSTRUCTIONS
+1. Install [Node.js](https://nodejs.org/en/)
+2. Clone this repository to your computer
+3. Within your terminal, navigate to the file location of the cloned repository
+4. Enter "node index.js" into the terminal.
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-1. 
-
-
-## Usage 
-
+## USAGE
 Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
