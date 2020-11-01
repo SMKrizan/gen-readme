@@ -1,12 +1,10 @@
 const listLanguages = (selectedLanguages) => {
-    const langArray = selectedLanguages.map((i) => {
-        return `- ${i}
-        
-        <br>`;
+    const langArray = selectedLanguages.map((item) => {
+        return `- ${item}\n`;
     });
-        languagesList = langArray.join('');
-        // console.log({languagesList});
-        return `${languagesList}`;
+    languagesList = langArray.join('');
+    // console.log({languagesList});
+    return `${languagesList}`;
 }
 
 const displayLicense = selectedLicense => {
@@ -31,10 +29,9 @@ const displayLicense = selectedLicense => {
 
 // function to generate markdown for README
 module.exports = templateData => {
-    // console.log(templateData);
-  
-    const { title, description, languages, license, ...data} = templateData;
-    
+
+    const { title, description, languages, license, ...data } = templateData;
+
     return `
     # ${title}
     ![license badge](https://img.shields.io/badge/license-${license}-brightgreen)

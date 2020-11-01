@@ -1,20 +1,18 @@
 
-    # Project Title
-    ![license badge](https://img.shields.io/badge/license-CC-brightgreen)
+# Example
+![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-    ## Description
-    generate readme
+## Description
+Example
 
-    ### Languages used:
-    - HTML
-        
-        <br>- JavaScript
-        
-        <br>- Node
-        
-        <br>- ES6
-        
-        <br>
+### Languages used:
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- Node
+- ES6
+
 
     ## Table of Contents:
     - [Instructions for Installation](#instructions-for-installation)
@@ -25,23 +23,23 @@
     - [Questions?](#questions?)
 
     ## <a name="instructions-for-installation">Instructions for Installation</a>:
-    Example content
+    Example
 
     ## <a name="usage">Usage</a>:
-    Example content
+    Example
     
     ## <a name="contribution-guidelines">Contribution Guidelines</a>:
-    Example content
+    Example
 
     ## <a name="license">License</a>:
-    Licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+    Licensed under the [MIT](https://opensource.org/licenses/MIT) license..
 
     ## <a name="tests">Tests</a>:
-    Example content
+    Example
 
     ## <a name="questions?">Questions?</a>
-    Example content
-    Example content
-    Example content
+    Example
+    Example
+    Example
     [GitHub](https://github.com/Example)
     
