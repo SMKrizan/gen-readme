@@ -36,7 +36,7 @@ module.exports = templateData => {
     
     return `
     # ${title}
-    [https://img.shields.io/badge/license-${data.license}-brightgreen]()
+    ![license badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
     
     ## Description
     ${description}
@@ -52,26 +52,26 @@ module.exports = templateData => {
     - [Tests](#tests)
     - [Questions?](#questions?)
 
-    ## Instructions for Installation:
+    ## <a name="instructions-for-installation">Instructions for Installation</a>:
     ${data.installation}
 
-    ## Usage:
+    ## <a name="usage">Usage</a>:
     ${data.usage}
     
-    ## Contribution Guidelines:
+    ## <a name="contribution-guidelines">Contribution Guidelines</a>:
     ${data.contributing}
 
-    ## License:
+    ## <a name="license">License</a>:
     Licensed under ${displayLicense(data.license)}.
 
-    ## Tests:
+    ## <a name="tests">Tests</a>:
     ${data.tests}
 
-    ## Questions?
+    ## <a name="questions">Questions</a>?
     ${data.contact}
     ${data.name}
     ${data.email}
-    [github.com/${data.github}](#https://github.com/${data.github})
+    [GitHub](#https://github.com/${data.github})
 
     `
 };
