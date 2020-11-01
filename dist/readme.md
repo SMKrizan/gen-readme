@@ -1,12 +1,12 @@
 
-    # test9
+    # GEnerate Readme Example
     ![license badge](https://img.shields.io/badge/license-CC-brightgreen)
 
     ## Description
-    test9
+    Demonstrating project functionality
 
     ### Languages used:
-    - HTML<br> - CSS<br> - JavaScript<br> - jQuery<br> - Node<br> - ES6<br>
+    - HTML<br>- JavaScript<br>- Node<br>- ES6<br>
 
     ## Table of Contents:
     - [Instructions for Installation](#instructions-for-installation)
@@ -17,24 +17,23 @@
     - [Questions?](#questions?)
 
     ## <a name="instructions-for-installation">Instructions for Installation</a>:
-    test9
+    1) clone the project files to your computer, 2) navigate to the location of the saved files within your terminal, 3) run "node index.js"
 
     ## <a name="usage">Usage</a>:
-    test9
+    A walkthrough video will be included.
     
     ## <a name="contribution-guidelines">Contribution Guidelines</a>:
-    test9
+    If you have any questions regarding this application and/or are interested in future project collaboration, please do not hesitate to contact me at the email address below.
 
     ## <a name="license">License</a>:
-    Licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+    Licensed under undefined.
 
     ## <a name="tests">Tests</a>:
-    test9
+    N/A
 
     ## <a name="questions?">Questions?</a>
-    test9
-    test9
-    test9
-    [GitHub](https://github.com/smkrizan)
-
+    Please feel free to check out my other GitHub projects via the link provided below!
+    Sara
+    smkrizan@gmail.com
+    [GitHub](https://github.com/SMKrizan)
     

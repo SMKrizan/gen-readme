@@ -2,7 +2,7 @@ const listLanguages = (selectedLanguages) => {
     const langArray = selectedLanguages.map((i) => {
         return `- ${i}<br>`;
     });
-        languagesList = langArray.join(' ');
+        languagesList = langArray.join('');
         console.log({languagesList});
         return `${languagesList}`;
 }
@@ -71,15 +71,5 @@ module.exports = templateData => {
     ${data.name}
     ${data.email}
     [GitHub](https://github.com/${data.github})
-
     `
 };
-  
-
-// generate h2 instructions/examples for use with screenshot
-// ```md
-// ![alt text](assets/images/screenshot.png)
-// ```
-
-
-

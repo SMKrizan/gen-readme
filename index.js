@@ -53,20 +53,10 @@ Answer these questions to generate a new ReadMe file
             message: "Provide instructions and examples for use. Include screenshots as needed."
         },
         {
-            type: 'input',
-            name: 'image-link',
-            message: "Please provide the link to a screenshot of your project"
-        },
-        {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Please select one of the following open source licenses:',
             choices: ['MIT', 'GPL', 'MPL', 'CC', 'Unlicense', 'BSL'],
-        },
-        {
-            type: 'input',
-            name: 'contributing',
-            message: "Please enter guidance for those interested in making contributions to this application."
         },
         {
             type: 'input',
@@ -75,8 +65,13 @@ Answer these questions to generate a new ReadMe file
         },
         {
             type: 'input',
+            name: 'contributing',
+            message: "Please enter guidance for those interested in making contributions to this application."
+        },
+        {
+            type: 'input',
             name: 'contact',
-            message: "Please provide a message to accompany your personal contact information, such as guidance regarding how best to get in touch:"
+            message: "Use this space to let others know how to best contact you with any further questions:"
         },
         {
             type: 'input',
