@@ -17,15 +17,9 @@ A command-line application that prompts the user for input about their GitHub re
 
 ## <a name="usage">USAGE</a>
 
-
-![Application Screenshot](./assets/walkthrough.jpg "application walkthrough")*Here is a link to access a video walkthrough of the application:*
-[Walkthrough](https://drive.google.com/file/d/1hOT9PKYvzAL-POT5jI0g5kbRbdmTOvHc/preview)
-
+[![Application Screenshot](./assets/walkthrough.jpg)*Click the image-link to access a video walkthrough of the application:*](https://drive.google.com/file/d/1hOT9PKYvzAL-POT5jI0g5kbRbdmTOvHc/view?usp=sharing)
 
 
 ## <a name="credits">CREDITS</a>
 
-Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, and learning instructor through the University of Wisconsin Extended Campus Coding Bootcamp, in addition to the tutorial below:
-
-https://about.gitlab.com/handbook/markdown-guide/
-[GitHub](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/sites/handbook/source/handbook/markdown-guide/index.html.md)
+Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, and learning instructor through the University of Wisconsin Extended Campus Coding Bootcamp.
