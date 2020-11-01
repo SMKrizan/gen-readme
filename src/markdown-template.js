@@ -1,11 +1,11 @@
 const listLanguages = selectedLanguages => {
-    const langArray = selectedLanguages.map((language) => {
-        '<br>* [${' + language + '}](#${' + language + '})'
+    const langArray = selectedLanguages.map((i) => {
+        '<br>* [${' + i + '}](#${' + i + '})'
     });
         languagesList = langArray.join(' ');
         console.log(languagesList)
         return `
-            ${languagesList}
+            ${languagesList[i]}
         `;
 }
 
@@ -24,7 +24,7 @@ const displayLicense = selectedLicense => {
         case 'BSL':
             return `the [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt).`;
         default:
-            console.log('No selection was made');
+            console.log('No selection was made.');
     };
 }
 
@@ -37,7 +37,7 @@ module.exports = templateData => {
     
     return `
     # ${title}
-    ![license badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+    ![license badge](https://img.shields.io/badge/license-${license}-brightgreen)
 
     ## Description
     ${description}
