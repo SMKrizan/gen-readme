@@ -21,8 +21,10 @@ const displayLicense = selectedLicense => {
             return `the [MIT](https://opensource.org/licenses/MIT) license.`;
         case 'Unlicense':
             return `[The Unlicense](https://unlicense.org/).`;
-        case 'BSL   ':
+        case 'BSL':
             return `the [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt).`;
+        default:
+            console.log('No selection was made');
     };
 }
 
@@ -31,7 +33,7 @@ const displayLicense = selectedLicense => {
 module.exports = templateData => {
     console.log(templateData);
   
-    const { title, description, languages, ...data} = templateData;
+    const { title, description, languages, license, ...data} = templateData;
     
     return `
     # ${title}
@@ -61,7 +63,7 @@ module.exports = templateData => {
     ${data.contributing}
 
     ## <a name="license">License</a>:
-    Licensed under ${displayLicense(data.license)}.
+    Licensed under ${displayLicense(license[0])}.
 
     ## <a name="tests">Tests</a>:
     ${data.tests}

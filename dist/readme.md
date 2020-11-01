@@ -1,9 +1,9 @@
 
-    # test4
-    ![license badge](https://img.shields.io/badge/license-GPL-brightgreen)
+    # test5
+    ![license badge](https://img.shields.io/badge/license-undefined-brightgreen)
 
     ## Description
-    test4
+    test5
 
     ### Languages used:
     
@@ -19,24 +19,24 @@
     - [Questions?](#questions?)
 
     ## <a name="instructions-for-installation">Instructions for Installation</a>:
-    test4
+    test5
 
     ## <a name="usage">Usage</a>:
-    test4
+    test5
     
     ## <a name="contribution-guidelines">Contribution Guidelines</a>:
-    test4
+    test5
 
     ## <a name="license">License</a>:
-    Licensed under undefined.
+    Licensed under the [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)..
 
     ## <a name="tests">Tests</a>:
-    test4
+    test5
 
     ## <a name="questions?">Questions?</a>
-    test4
-    test4
-    test4
+    test5
+    test5
+    test5
     [GitHub](#https://github.com/smkrizan)
 
     
