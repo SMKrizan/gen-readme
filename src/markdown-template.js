@@ -61,7 +61,7 @@ module.exports = templateData => {
     ${data.contributing}
 
     ## <a name="license">License</a>:
-    Licensed under ${displayLicense(license[0])}.
+    Licensed under ${displayLicense(license)}.
 
     ## <a name="tests">Tests</a>:
     ${data.tests}
