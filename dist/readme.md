@@ -1,12 +1,20 @@
 
-    # Generate README.md
+    # Project Title
     ![license badge](https://img.shields.io/badge/license-CC-brightgreen)
 
     ## Description
-    THis app will generate a readme.md file.
+    generate readme
 
     ### Languages used:
-    - HTML<br>- JavaScript<br>- Node<br>- ES6<br>
+    - HTML
+        
+        <br>- JavaScript
+        
+        <br>- Node
+        
+        <br>- ES6
+        
+        <br>
 
     ## Table of Contents:
     - [Instructions for Installation](#instructions-for-installation)
@@ -33,7 +41,7 @@
 
     ## <a name="questions?">Questions?</a>
     Example content
-    Jolene Max
-    jmax@gmail.com
-    [GitHub](https://github.com/jmax)
+    Example content
+    Example content
+    [GitHub](https://github.com/Example)
     
