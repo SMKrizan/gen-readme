@@ -1,12 +1,12 @@
 
-    # test8
-    ![license badge](https://img.shields.io/badge/license-GPL-brightgreen)
+    # test9
+    ![license badge](https://img.shields.io/badge/license-CC-brightgreen)
 
     ## Description
-    test8
+    test9
 
     ### Languages used:
-    <br>* [jQuery](#jQuery) <br>* [Node](#Node) <br>* [ES6](#ES6)
+    - HTML<br> - CSS<br> - JavaScript<br> - jQuery<br> - Node<br> - ES6<br>
 
     ## Table of Contents:
     - [Instructions for Installation](#instructions-for-installation)
@@ -17,24 +17,24 @@
     - [Questions?](#questions?)
 
     ## <a name="instructions-for-installation">Instructions for Installation</a>:
-    test8
+    test9
 
     ## <a name="usage">Usage</a>:
-    test8
+    test9
     
     ## <a name="contribution-guidelines">Contribution Guidelines</a>:
-    test8
+    test9
 
     ## <a name="license">License</a>:
-    Licensed under the [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0).
+    Licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
 
     ## <a name="tests">Tests</a>:
-    test8
+    test9
 
     ## <a name="questions?">Questions?</a>
-    test8
-    test8
-    test8
+    test9
+    test9
+    test9
     [GitHub](https://github.com/smkrizan)
 
     

@@ -1,9 +1,9 @@
 const listLanguages = (selectedLanguages) => {
     const langArray = selectedLanguages.map((i) => {
-        return `<br>* [${i}](#${i})`;
+        return `- ${i}<br>`;
     });
         languagesList = langArray.join(' ');
-        console.log({ languagesList });
+        console.log({languagesList});
         return `${languagesList}`;
 }
 
