@@ -1,11 +1,11 @@
 const listLanguages = selectedLanguages => {
     const langArray = selectedLanguages.map((i) => {
-        '<br>* [${' + i + '}](#${' + i + '})'
+        return `<br>* [${' + i + '}](#${' + i + '})`;
     });
         languagesList = langArray.join(' ');
         console.log(languagesList)
         return `
-            ${languagesList[i]}
+            ${languagesList}
         `;
 }
 
@@ -72,7 +72,7 @@ module.exports = templateData => {
     ${data.contact}
     ${data.name}
     ${data.email}
-    [GitHub](#https://github.com/${data.github})
+    [GitHub](https://github.com/${data.github})
 
     `
 };
